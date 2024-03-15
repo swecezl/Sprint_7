@@ -1,0 +1,5 @@
+create_courier_is_ok_text = '{"ok":true}'
+same_courier_error_text = '{"code":409,"message":"Этот логин уже используется. Попробуйте другой."}'
+create_courier_without_required_field_error_text = '{"code":400,"message":"Недостаточно данных для создания учетной записи"}'
+login_courier_without_login_error_text = '{"code":400,"message":"Недостаточно данных для входа"}'
+login_invalid_creds = '{"code":404,"message":"Учетная запись не найдена"}'

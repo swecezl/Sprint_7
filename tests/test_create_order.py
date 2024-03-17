@@ -2,6 +2,7 @@ import pytest
 import requests
 import allure
 from URL import *
+from data import order_payload
 
 
 class TestCreateOrder:
@@ -16,7 +17,7 @@ class TestCreateOrder:
             "phone": "+7 800 355 35 35",
             "rentTime": 5,
             "deliveryDate": "2020-06-06",
-            "comment": "pytest tests.py --alluredir=allure_resultsSaske, come back to Konoha",
+            "comment": "pytest tests.py --allure dir=allure_results Saske, come back to Konoha",
             "color": color
         }
         response = requests.post(ORDERS_URL, params=payload)

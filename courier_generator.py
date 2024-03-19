@@ -4,6 +4,7 @@ import string
 import allure
 
 
+# метод генерирует строку, состоящую только из букв нижнего регистра, в качестве параметра передаём длину строки
 def generate_random_string(length):
     letters = string.ascii_lowercase
     random_string = ''.join(random.choice(letters) for i in range(length))
@@ -14,12 +15,6 @@ def generate_random_string(length):
 # если регистрация не удалась, возвращает пустой список
 @allure.step('Генерируем данные нового курьера и регистрируем его')
 def register_new_courier_and_return_login_password():
-    # метод генерирует строку, состоящую только из букв нижнего регистра, в качестве параметра передаём длину строки
-    # def generate_random_string(length):
-    #     letters = string.ascii_lowercase
-    #     random_string = ''.join(random.choice(letters) for i in range(length))
-    #     return random_string
-
     # создаём список, чтобы метод мог его вернуть
     login_pass = []
 
